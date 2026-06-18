@@ -100,9 +100,9 @@ $ test.sh
 ```
 > Note that this will test the models used in the paper. If you want to test your own models, go an update the script accordingly. Note that this script will run the statistical tests to compare the trained models as well.
 
-## Dataset and Trained Models
+## Dataset
 
-The lymph node metastases dataset used in the paper and the trained models can be downloaded from [here](https://bit.ly/mil_pooling_filters).
+The lymph node metastases dataset used in the paper can be downloaded from [here](https://bit.ly/mil_pooling_filters).
 
 
 ## Citation
