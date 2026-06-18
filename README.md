@@ -67,7 +67,7 @@ pip install -r requirements.txt
 To train a model with a specific MIL pooling filter (e.g. 'distribution' pooling filter), run:
 
 ```train
-python train.py --mil_pooling_filter "distribution"
+python train.py --mil_pooling_filter "gmm"
 ```
 
 > Some other hyper-parameters can also be passed to 'train.py' as '--key value' pairs. Please check 'train.py' for the full list of hyper-parameters. Also note that all hyper-parameters are set to the values used in the paper by default.
