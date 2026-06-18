@@ -83,14 +83,14 @@ $ train.sh
 To test a model on the bags created from test set images, run:
 
 ```test
-python test.py --mil_pooling_filter "distribution" --init_model_file "saved_models/state_dict__2020_12_01__13_13_18__500.pth"
+python test.py --mil_pooling_filter "distribution" --init_model_file "saved_models/checkpoint.pth"
 ```
-> This will generate and test multiple bags for each image and save the results in 'test_metrics/2020_12_01__13_13_18__500/test' folder.
+> This will generate and test multiple bags for each image and save the results in 'test_metrics/checkpoint/test' folder.
 
 To obtain image level statistics, run:
 
 ```
-python collect_statistics_over_bag_predictions.py --data_folder_path "test_metrics/2020_12_01__13_13_18__500/test"
+python collect_statistics_over_bag_predictions.py --data_folder_path "test_metrics/checkpoint/test"
 ```
 
 To test full set of models with all 5 pooling filters and collect image level statistics in a task, run:
