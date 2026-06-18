@@ -21,15 +21,36 @@ GMM Pooling instead models the distribution of instance-level features using mul
 Given a bag of instance features, GMM Pooling estimates a mixture-based representation of the feature distribution. The resulting parameters are used as the bag-level representation for downstream prediction.
 
 <p align="center">
-  <img src="assets/gmm_pooling_overview.png" width="700">
+  <img src="assets/motivation_figure.png" width="700">
 </p>
 
 ## Main Results
 
-| Task | Pooling Method | Performance |
-|---|---:|---:|
-| Classification | GMM Pooling | Add result |
-| Regression | GMM Pooling | Add result |
+### Preterm Birth Prediction
+
+| Method | PR-AUC ↑ | ROC-AUC ↑ |
+|----------|----------|----------|
+| Instance-based | 0.44 ± 0.01 | 0.64 ± 0.02 |
+| Max Pooling | **0.57 ± 0.05** | **0.71 ± 0.03** |
+| Attention Pooling | 0.56 ± 0.02 | 0.67 ± 0.03 |
+| Density Pooling | 0.54 ± 0.03 | 0.68 ± 0.02 |
+| **GMM Pooling (Ours)** | **0.56 ± 0.03** | **0.69 ± 0.03** |
+
+### Lymph Node Metastasis Benchmark
+
+| Method | F1 ↑ | ROC-AUC ↑ | MAE ↓ |
+|----------|----------|----------|----------|
+| Max Pooling | 0.84 ± 0.03 | 0.83 ± 0.05 | 0.24 ± 0.01 |
+| Mean Pooling | 0.86 ± 0.04 | 0.86 ± 0.03 | 0.23 ± 0.02 |
+| Attention Pooling | 0.87 ± 0.02 | 0.88 ± 0.02 | 0.18 ± 0.04 |
+| Density Pooling | 0.87 ± 0.01 | 0.87 ± 0.01 | **0.17 ± 0.01** |
+| **GMM Pooling (Ours)** | **0.91 ± 0.01** | **0.89 ± 0.01** | 0.18 ± 0.02 |
+
+Key observations:
+- MIL substantially improves over instance-based PTB prediction.
+- GMM Pooling achieves competitive PTB performance while modeling intra-bag feature distributions.
+- GMM Pooling achieves state-of-the-art classification performance on the lymph node benchmark.
+
 
 ## Requirements
 
