@@ -110,11 +110,14 @@ The lymph node metastases dataset used in the paper can be downloaded from [here
 If you use this code, please cite:
 
 ```bibtex
-@inproceedings{alasmawi2026gmmpooling,
-  title={From Point Estimates to Distributions: GMM Pooling for MIL in Preterm Birth Prediction},
-  author={Alasmawi, Hussain and others},
-  booktitle={},
-  year={2026}
+@misc{alasmawi2026pointestimatesdistributionsgmm,
+      title={From Point Estimates to Distributions: GMM Pooling for MIL in Preterm Birth Prediction}, 
+      author={Hussain Alasmawi and Numan Saeed and Soha Said and Mohammad Yaqub},
+      year={2026},
+      eprint={2606.23005},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.23005}, 
 }
 ```
 ## Contact
