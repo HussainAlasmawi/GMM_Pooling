@@ -5,6 +5,8 @@ Official implementation of **GMM Pooling**, a multiple instance learning pooling
 This repository contains the code used for the paper:
 > **From Point Estimates to Distributions: GMM Pooling for MIL in Preterm Birth Prediction**  
 > Hussain Alasmawi, Numan Saeed, Soha Said, Mohammad Yaqub
+> 
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2606.23005)
 
 ## Overview
 
